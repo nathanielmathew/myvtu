@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font&display=swap');
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.header{
+    background-color: #F4743B;
+    margin-bottom: 1.45rem;
+    animation: fadein 0.5s;
+}
+.header-div{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0.10rem 1.0875rem;
+}
+.header-content{
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-size: 2em;
+    margin: auto 0px;
+    font-family: 'Cute Font', cursive;
+    font-weight: normal;
+    color: #F1FFE7;
+    transition: 0.3s
+}
+.title:hover,.links a:hover{
+    color: #000022; 
+}
+.links{
+    margin: auto 0px;
+}
+.links a{
+    padding: 10px;
+    font-size: 0.6em;
+    text-decoration: none;
+    color: #F6F7F8; 
+    animation: fadein 3s;
+    transition: 0.25s;
+}
