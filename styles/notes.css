@@ -18,11 +18,11 @@
     width: 20rem;
     padding: 10px;
     border-radius: 15px;
-    background-color: #F4743B;
-    transition: 0.5s;
+    background-color: #2a2b7c;
+    transition: 0.2s;
 }
 .project-card-content:hover{
-    background: #20A4F3;
+    background: #f83434;
 }
 .project-name{
     margin: 10px 0px;

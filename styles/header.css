@@ -4,7 +4,7 @@
     to   { opacity: 1; }
 }
 .header{
-    background-color: #F4743B;
+    background-color: #f83434;
     margin-bottom: 1.45rem;
     animation: fadein 0.5s;
 }
@@ -24,10 +24,11 @@
     font-family: 'Cute Font', cursive;
     font-weight: normal;
     color: #F1FFE7;
-    transition: 0.3s
+    transition: ease-out 0.8s
 }
 .title:hover,.links a:hover{
-    color: #000022; 
+    color: #212136; 
+    transition: 0.2s;
 }
 .links{
     margin: auto 0px;
@@ -37,6 +38,6 @@
     font-size: 0.6em;
     text-decoration: none;
     color: #F6F7F8; 
-    animation: fadein 3s;
-    transition: 0.25s;
+    animation: fadein 0.8s;
+    transition: ease-out 0.25s;
 }
