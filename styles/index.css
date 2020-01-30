@@ -1,0 +1,23 @@
+.index-card-container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.index-card-content{
+    margin: 2.5em auto;
+    min-width: 20rem;
+    padding: 3em 0px;
+    border-radius: 15px;
+    background-color: #2a2b7c;
+    transition: 0.2s;
+}
+.index-card-content:hover{
+    background: #f83434;
+}
+.index-name{
+    margin: 10px 0px;
+    color:#F6F7F8;
+    text-align: center;
+}
