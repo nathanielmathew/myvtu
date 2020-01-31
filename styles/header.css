@@ -10,7 +10,7 @@
 }
 .header-div{
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 90%;
     padding: 0.10rem 1.0875rem;
 }
 .header-content{
@@ -27,7 +27,7 @@
     transition: ease-out 0.8s
 }
 .title:hover,.links a:hover{
-    color: #212136; 
+    color: #212136;
     transition: 0.2s;
 }
 .links{
