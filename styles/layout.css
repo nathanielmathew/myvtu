@@ -23,6 +23,7 @@ p{
     font-size: 1.00em;
 }
 #noclick{
+  display: none;
   background-color: #8d8e91;
 }
 article,
