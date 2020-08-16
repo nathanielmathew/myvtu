@@ -15,7 +15,7 @@
         <link rel="stylesheet" type="text/css" href="styles/layout.css">
         <link rel="stylesheet" type="text/css" href="styles/footer.css">        
         <link rel="stylesheet" type="text/css" href="styles/header.css">
-        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="stylesheet" type="text/css" href="styles/cgpa.css">
         <link rel="stylesheet" type="text/css" href="styles/notes.css">
     </head>
 <body>
@@ -39,39 +39,40 @@
         <div class="intro-container">
       
       <div class="intro">
-        <h1>Welcome to MyVTU.me!</h1>
-        <p><strong>MyVTU.me</strong>
-        is a website for all your VTU related needs, using which you can find relevant VTU Notes and Question Papers with ease!</p>
+        <h1>MyVTU CGPA Converter</h1>
+        <p>Convert your VTU CGPA to equivalent Percentage.<br /><code>(CGPA must be between 0 and 10)</code></p>
       </div>
     </div>
-    
-        <div class="index-card-container">
-          
-            <div class="index-card-content">
-              
-            <a href="papers.html">
-              <div class="img-container">
-                <img src="icons/papers.png" />
-              </div>
-                <h3 class="index-name">
-                    Find VTU Questions Papers!
-                </h3>
-            </a>
-            </div>
-            
-            <div class="index-card-content">
-              
-            <a href="notes.html">
-                <div class="img-container">
-                  <img src="icons/note.png" />
-                </div>
-                <h3 class="index-name">
-                    Find VTU Notes!
-                </h3>
-            </a>
-            </div>
-            
+    <div class="container">
+        <div class="input-container">
+        <div class="cgpa">
+            <input type="number" id="cgpa" />
+            <p>CGPA</p>
         </div>
+        <div class="percent">
+            <input type="number" id="percent">
+            <p>Percentage</p>
+            </input>
+        </div>
+        </div>
+
+        <p class="go" >
+            <button onclick="convert()">
+                convert
+            </button>
+        </p>
+
+
+        <script>
+            function convert(){
+                cgpa = document.getElementById("cgpa").value
+                    if(cgpa<=10 && cgpa>0)
+                        document.getElementById("percent").value = (cgpa-0.75)*10;
+                    else
+                        alert("Please enter a valid CGPA");
+            }
+        </script>
+    </div>
             
         <div id="295482703">
           <script type="text/javascript">
